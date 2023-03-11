@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <h2>Registration:</h2>
+      <div>
+        <h4>Personal Data:</h4>
+        <label for="user_email">Email:</label>
+        <input type="email" id="user_email" name="user_email" required>
+        <label for="user_password">Password:</label>
+        <input type="password" id="user_password" name="user_password" required>
+        <label for="user_name">Name:</label>
+        <input type="name" id="user_name" name="user_name" required>
+        <label for="user_lastname">Last name:</label>
+        <input type="lastname" id="user_lastname" name="user_lastname" required>
+        <label for="user_birth_date">Birth date:</label>
+        <input type="date" id="user_birth_date" name="user_birth_date" required>
+        <label for="user_phonenumber">Phonenumber:</label>
+        <input type="phonenumber" id="user_phonenumber" name="user_phonenumber">
+      </div>
+      <div>
+        <h4>Plans:</h4>
+        <label for="plans">Chose your plane:</label>
+        <select name="plans" id="plans" name="plans">
+          <option value="free_plane">Free plan</option>
+          <optgroup label="Monthly">
+            <option value="plan1">9,99€/month</option>
+            <option value="plan2">19,99€/month</option>
+            <option value="plan3">29,99€/month</option>
+          </optgroup>
+        </select>
+        <br>
+        <input type="checkbox" id="pro_plane" name="pro_plane">
+        <label for="pro_plane">Pro plane</label>
+      </div>
+      <div>
+        <h4>Credit card data:</h4>
+        <label for="creditcard_number"> Card number:</label>
+        <input type="text" id="creditcard_number" name="creditcard_number">
+        <label for="CVC">CVC:</label>
+        <input type="text" id="CVC" name="CVC">
+        <label for="expiration_date">Expiration date:</label>
+        <input type="date" id="expiration_date" name="expiration_date">
+        <label for="billing_address">Billing address:</label>
+        <input type="text" id="billing_address" name="billing_address">
+      </div>
+      <br>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
